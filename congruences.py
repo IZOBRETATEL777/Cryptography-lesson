@@ -1,6 +1,6 @@
 while True:
     a='no'
-    try:
+    try:#handling errors
         a,b=map(int,input("Enter two integers: ").split())
         c=int(input("Enter the divisor: "))
         f=int(input("Enter integer to check whether prime or not: "))
@@ -14,11 +14,11 @@ while True:
         print("Exiting...")
         break
 try:
-    def isCongruence(a,b):
+    def isCongruence(a,b):#check whether numbers are congruence
         if a%c==b%c: return True
         return False
 
-    def isPrime(a):
+    def isPrime(a):#check whether numbers are prime
         for i in range(2,int(a**0.5)+1):
             if a%2==0: return False
         return True
